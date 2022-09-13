@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public float speed;
+    [SerializeField] float speed;
     private Rigidbody enemyRb;
     private GameObject player;
     
@@ -25,6 +25,5 @@ public class Enemy : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
     }
 }

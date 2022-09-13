@@ -5,11 +5,12 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody rigidbodyRb;
-    public float speed = 5;
+    [SerializeField] float speed = 5;
     private GameObject focalPoint;
-    public bool hasPowerup = false;
-    public float powerupStrength = 15.0f;
-    public GameObject powerupIndicator;
+    bool hasPowerup = false;
+    float powerupStrength = 15.0f;
+    [SerializeField] GameObject powerupIndicator;
+
     // Start is called before the first frame update
     void Start()
     {
